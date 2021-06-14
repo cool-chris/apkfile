@@ -24,5 +24,3 @@ build-android:
       with:
         name: package
         path: ${{ steps.buildozer.outputs.filename }}t with pytest
-      run: |
-        pytest
