@@ -1,0 +1,45 @@
+<Mywid>
+  txt:txty
+  GridLayout:
+    cols:1
+    size:root.width,root.height
+    GridLayout:
+      cols:6
+      background_color:0.2,0.3,0.9,1
+      size_hint:0.1,0.1
+      Button:
+        text:'Open'
+        color_hint:(1,1,1,1)
+        background_color:0.2,0.3,0.9,1
+        on_press:root.open()
+      Button:
+        text:'Save'
+        on_press:root.save()
+        background_color:0.2,0.3,0.9,1
+      Button:
+        text:'New'
+        on_press:root.clear()
+        background_color:0.2,0.3,0.9,1
+      Button:
+        text:'Save as'
+        background_color:0.2,0.3,0.9,1
+      Button:
+        text:'<-'
+        font_size:35
+        on_press:root.decrease()
+        background_color:0.1,0.6,0.1,1
+        size_hint:0.5,0.5
+      Button:
+        text:'+>'
+        font_size:35
+        background_color:0.1,0.6,0.1,1
+        on_press:root.increase()
+        size_hint:0.5,0.5
+    GridLayout:
+      cols:1
+      TextInput:
+        id:txty
+        font_size:40
+        color:0.1,0.5,0.5,1
+        
+      	
